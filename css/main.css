@@ -1,0 +1,40 @@
+/*setear mi css*/
+body{
+  box-sizing: border-box;
+  color: #303030;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*clases reutilizables*/
+.text-uppercase {
+  text-transform: uppercase;  /*text-tranform para mayusculas y asi*/
+
+}
+li a {
+  text-decoration: none;/*quitamos la linea*/
+  color: inherit; /*se quito el color*/
+}
+ul li{
+  display: inline;/*porque la lista va a ir de un lado a otro */
+  list-style: none;/*se le quita la viñeta*/
+  margin: 5px;/*separar*/
+}
+.logo-header{
+  width: 200px;
+}
+
+header{
+   position: relative; /*padre de nav*/
+}
+
+nav { /*float: right;  se mueve a la derecha*/
+      position: absolute;/*rompa todo el box */
+      right: 0;
+      top:50%;
+      transform:translateY(-50%); ;/*transforma la caja*/
+      }
+
+.box-header{ /* une al figure y nav del header para que esten al mismo nivel*/
+  display: inline-block; /*lo pone al mismo nivel */
+}
