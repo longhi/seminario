@@ -9,16 +9,24 @@ body{
 /*clases reutilizables*/
 .text-uppercase {
   text-transform: uppercase;  /*text-tranform para mayusculas y asi*/
-
 }
-li a {
-  text-decoration: none;/*quitamos la linea*/
-  color: inherit; /*se quito el color*/
+div{
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 2px;
+  width: 33%
+}
+
+/*clases especificas*/
+
+a {
+    color: inherit; /*se quito el color*/
+    text-decoration: none;/*quitamos la linea*/
 }
 ul li{
   display: inline;/*porque la lista va a ir de un lado a otro */
-  list-style: none;/*se le quita la viñeta*/
   margin: 5px;/*separar*/
+  list-style: none;/*se le quita la viñeta*/
 }
 .logo-header{
   width: 200px;
@@ -37,4 +45,44 @@ nav { /*float: right;  se mueve a la derecha*/
 
 .box-header{ /* une al figure y nav del header para que esten al mismo nivel*/
   display: inline-block; /*lo pone al mismo nivel */
+}
+.logo-square{
+  width: 100px;/*el ancho de la imagen */
+}
+/*.logo-square img {
+  width: 100% /*ocupe toda la imagen
+}*/
+section{/*para que todo este dentro */
+  text-align: center;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 40px;
+  transition: 0s;
+}
+
+li:hover,[class^="icon-"]:hover, [class*=" icon-"]:hover{
+  color:#db964a;
+}
+
+
+
+footer {
+  background-color: #303030;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #db964a;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: inherit;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: #644721;
 }
